@@ -17,6 +17,7 @@ class SignUp extends Component {
   }
 
   async onSubmit(formData) {
+    console.log(formData);
     await this.props.signUp(formData);
     if (!this.props.errorMessage) {
       this.props.history.push('/dashboard');
@@ -106,6 +107,9 @@ function mapStateToProps(state) {
   }
 }
 
+// list all the higher end components that you want to be part of the component
+//this comes from connect "compose"
+//first argument of connect is state, then actions 
 export default compose(
   connect(mapStateToProps, actions),
   reduxForm({ form: 'signup' })
