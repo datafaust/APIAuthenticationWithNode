@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import HeaderBootstrap from './HeaderBootstrap';
+//import HeaderBootstrap from './HeaderBootstrap';
 import Header from './Header';
 import * as actions from '../actions';
 
